@@ -60,9 +60,20 @@
 }
 
 .monaco-editor .cursors-layer .cursor {
-	width: 2px !important;
-	background-image: linear-gradient(to top, #6a5af9, #d66efd, #fc6c8f, #ff2ced);
+	width: 1px !important;
+	background-image: linear-gradient(224deg, #e98ba2, #fb3da6);
 }
+
+.monaco-workbench
+	.part.basepanel
+	> .composite.title
+	> .panel-switcher-container
+	> .monaco-action-bar
+	.badge
+	.badge-content {
+	background-image: linear-gradient(224deg, #e98ba2, #fb3da6) !important;
+}
+
 .mtki {
 	font-style: normal;
 }
@@ -81,7 +92,7 @@
 	border-top-color: 0 !important;
 	background-size: 400% 400%;
 	background-image: var(--color-tabAnimationVSCode);
-	animation: gradient 4s ease alternate infinite;
+	animation: gradient 4s ease alternate forwards;
 	height: 1px;
 }
 
@@ -95,8 +106,8 @@
 	> .tab-border-top-container {
 	background-size: 400% 400%;
 	background-image: var(--color-tabAnimationVSCode);
-	animation: gradient 4s ease alternate infinite;
-	height: 2px;
+	animation: gradient 4s ease alternate forwards;
+	height: 1px;
 }
 
 @keyframes gradient {
@@ -113,7 +124,7 @@
 	}
 }
 
-/* Evondev color text */
+/* color text css */
 .monaco-workbench
 	.part.basepanel
 	> .composite.title
@@ -121,7 +132,7 @@
 	> .monaco-action-bar
 	.action-item.checked
 	.action-label {
-	color: #e25bc7 !important;
+	color: #ff6ab5 !important;
 }
 
 .mtk10,
