@@ -25,88 +25,7 @@
 	);
 	--color-tabAnimationVSCode3: linear-gradient(45deg, #df7adf, #e339d8);
 }
-/* .mtk10,
-.mtk15 {
-	color: transparent;
-	background-image: linear-gradient(var(--gradient-dir4), #fc806c, #ff1bd1);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-.mtk5,
-.mtk26 {
-	color: transparent;
-	background-image: linear-gradient(
-		var(--gradient-dir1),
-		#4dd78a,
-		#20e3b2,
-		#a2de6a
-	);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	-webkit-font-smoothing: auto;
-}
-.mtk26 {
-	background-image: linear-gradient(
-		var(--gradient-dir5),
-		#4dd78a,
-		#20e3b2,
-		#a2de6a
-	);
-	font-style: italic;
-}
-.mtk23,
-.mtk16 {
-	color: transparent;
-	background-image: linear-gradient(to bottom, #d66efd, #6a5af9);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-}
-.mtk9,
-.mtk17 {
-	color: transparent;
-	background-image: linear-gradient(
-		var(--gradient-dir2),
-		#098dff,
-		#2cccff,
-		#2979ff
-	);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-}
-.mtk18 {
-	color: transparent;
-	background-image: linear-gradient(var(--gradient-dir2), #b0beff, #fed9ff);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	font-style: normal;
-}
-.mtk3 {
-	color: transparent;
-	background-image: linear-gradient(to top, #fce1d0, #ffadd6, #e39bf7);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-}
-.mtk7 {
-	color: transparent;
-	background-image: linear-gradient(var(--gradient-dir2), #fc6c8f, #ffb86c);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-.mtk8,
-.mtk14 {
-	color: transparent;
-	background-image: linear-gradient(to right, #ffb88c, #eac394);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-} */
+
 .monaco-workbench
 	.activitybar
 	> .content
@@ -115,13 +34,14 @@
 	.action-item.checked
 	.active-item-indicator:before {
 	border: 0;
-	width: 2px;
+	width: 3px;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: linear-gradient(45deg, #fc6c8f, #ff2ced);
+	background-image: linear-gradient(224deg, #e98ba2, #fb3da6);
 }
+
 .monaco-workbench
 	.activitybar
 	> .content
@@ -129,131 +49,26 @@
 	> .monaco-action-bar
 	.badge
 	.badge-content {
-	background-image: linear-gradient(45deg, #fc6c8f, #ff2ced);
+	background-image: linear-gradient(224deg, #e98ba2, #fb3da6);
 }
+
+.monaco-workbench
+	.part.statusbar
+	> .items-container
+	> .statusbar-item.has-background-color.left.first-visible-item {
+	background-image: linear-gradient(224deg, #e98ba2, #fb3da6) !important;
+}
+
 .monaco-editor .cursors-layer .cursor {
-	width: 3px !important;
+	width: 2px !important;
 	background-image: linear-gradient(to top, #6a5af9, #d66efd, #fc6c8f, #ff2ced);
 }
 .mtki {
 	font-style: normal;
 }
-/* 
-.monaco-workbench
-	.part.editor
-	> .content
-	.editor-group-container
-	> .title
-	.tabs-container
-	> .tab.active.tab-border-top
-	> .tab-border-top-container {
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-color: transparent;
-}
-.monaco-workbench
-	.part.editor
-	> .content
-	.editor-group-container
-	> .title
-	.tabs-container
-	> .tab.active.tab-border-top
-	> .tab-border-top-container:before,
-.monaco-workbench
-	.part.editor
-	> .content
-	.editor-group-container
-	> .title
-	.tabs-container
-	> .tab.active.tab-border-top
-	> .tab-border-top-container:after {
-	content: "";
-	width: var(--size);
-	height: var(--size);
-	position: absolute;
-	border: 2px solid;
-	border-image-slice: 1;
-}
-.monaco-workbench
-	.part.editor
-	> .content
-	.editor-group-container
-	> .title
-	.tabs-container
-	> .tab.active.tab-border-top
-	> .tab-border-top-container:before {
-	top: 0;
-	left: 0;
-	border-right: 0;
-	border-bottom: 0;
-	border-image-source: linear-gradient(-45deg, #4dd78a, #20e3b2);
-}
-.monaco-workbench
-	.part.editor
-	> .content
-	.editor-group-container
-	> .title
-	.tabs-container
-	> .tab.active.tab-border-top
-	> .tab-border-top-container:after {
-	right: 0;
-	bottom: 0;
-	border-top: 0;
-	border-left: 0;
-	border-image-source: linear-gradient(-45deg, #6a5af9, #d66efd);
-}
-.monaco-workbench
-	.part.editor
-	> .content
-	.editor-group-container
-	> .title
-	.tabs-container
-	> .tab.active:before,
-.monaco-workbench
-	.part.editor
-	> .content
-	.editor-group-container
-	> .title
-	.tabs-container
-	> .tab.active:after {
-	content: "";
-	width: var(--size);
-	height: var(--size);
-	position: absolute;
-	border: 2px solid;
-	border-image-slice: 1;
-}
-.monaco-workbench
-	.part.editor
-	> .content
-	.editor-group-container
-	> .title
-	.tabs-container
-	> .tab.active:before {
-	left: 0;
-	bottom: 0;
-	border-top: 0;
-	border-right: 0;
-	border-image-source: linear-gradient(-45deg, #fc6c8f, #ffb86c);
-}
-.monaco-workbench
-	.part.editor
-	> .content
-	.editor-group-container
-	> .title
-	.tabs-container
-	> .tab.active:after {
-	top: 0;
-	right: 0;
-	border-left: 0;
-	border-bottom: 0;
-	border-image-source: linear-gradient(-45deg, #098dff, #2cccff);
-} */
 
 .monaco-editor .line-numbers.active-line-number {
-	color: #d34698;
+	color: #fb3da6;
 }
 
 .monaco-workbench
@@ -266,7 +81,7 @@
 	border-top-color: 0 !important;
 	background-size: 400% 400%;
 	background-image: var(--color-tabAnimationVSCode);
-	animation: gradient 4s ease alternate forwards;
+	animation: gradient 4s ease alternate infinite;
 	height: 1px;
 }
 
@@ -280,7 +95,7 @@
 	> .tab-border-top-container {
 	background-size: 400% 400%;
 	background-image: var(--color-tabAnimationVSCode);
-	animation: gradient 4s ease alternate forwards;
+	animation: gradient 4s ease alternate infinite;
 	height: 2px;
 }
 
@@ -297,32 +112,6 @@
 		background-position: 0 50%;
 	}
 }
-
-/* VS code tab gradient */
-/* .monaco-workbench
-	.part.editor
-	> .content
-	.editor-group-container
-	> .title
-	.tabs-container
-	> .tab.active {
-	background-size: 400% 400%;
-	background-image: var(--color-tabAnimationVSCode);
-	animation: gradient 4s ease alternate infinite;
-	height: 1px;
-}
-
-.monaco-workbench
-	.part.editor
-	> .content
-	.editor-group-container.active
-	> .title
-	.tabs-container
-	> .tab
-	> .tab-actions
-	.action-label.codicon {
-	height: 32px;
-} */
 
 /* Evondev color text */
 .monaco-workbench
