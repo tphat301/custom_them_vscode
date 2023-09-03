@@ -9,12 +9,11 @@
 		-45deg,
 		#fc6c8f,
 		#ff2ced,
-		#ffb86c,
+		#e9b073,
 		#2cccff,
 		#20e3b2,
 		#ffcc70,
-		#c850c0,
-		#4158d0
+		#e18c9f
 	);
 	--color-tabAnimationVSCode2: linear-gradient(
 		to top,
@@ -39,7 +38,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: linear-gradient(224deg, #e98ba2, #fb3da6);
+	background-image: linear-gradient(224deg, #ba91fb, #ed2794);
 }
 
 .monaco-workbench
@@ -56,7 +55,7 @@
 	.part.statusbar
 	> .items-container
 	> .statusbar-item.has-background-color.left.first-visible-item {
-	background-image: linear-gradient(224deg, #e98ba2, #fb3da6) !important;
+	background-image: linear-gradient(224deg, #ba91fb, #ed2794);
 }
 
 .monaco-editor .cursors-layer .cursor {
@@ -79,21 +78,7 @@
 }
 
 .monaco-editor .line-numbers.active-line-number {
-	color: #fb3da6;
-}
-
-.monaco-workbench
-	.part.basepanel
-	> .title
-	> .panel-switcher-container
-	> .monaco-action-bar
-	.action-item.checked:not(:focus)
-	.active-item-indicator:before {
-	border-top-color: 0 !important;
-	background-size: 400% 400%;
-	background-image: var(--color-tabAnimationVSCode);
-	animation: gradient 4s ease alternate forwards;
-	height: 1px;
+	color: #ff66bb;
 }
 
 .monaco-workbench
@@ -106,7 +91,6 @@
 	> .tab-border-top-container {
 	background-size: 400% 400%;
 	background-image: var(--color-tabAnimationVSCode);
-	animation: gradient 4s ease alternate forwards;
 	height: 1px;
 }
 
