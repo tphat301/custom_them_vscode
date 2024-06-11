@@ -25,6 +25,7 @@
 	--color-tabAnimationVSCode3: linear-gradient(45deg, #df7adf, #e339d8);
 }
 
+/* Tab left border active */
 .monaco-workbench
 	.activitybar
 	> .content
@@ -52,18 +53,6 @@
 }
 
 .monaco-workbench
-	.part.statusbar
-	> .items-container
-	> .statusbar-item.has-background-color.left.first-visible-item {
-	background-image: linear-gradient(224deg, #ba91fb, #ed2794);
-}
-
-.monaco-editor .cursors-layer .cursor {
-	width: 1px !important;
-	background-image: linear-gradient(224deg, #e98ba2, #fb3da6);
-}
-
-.monaco-workbench
 	.part.basepanel
 	> .composite.title
 	> .panel-switcher-container
@@ -81,6 +70,7 @@
 	color: #ff66bb;
 }
 
+/* Tab border top active */
 .monaco-workbench
 	.part.editor
 	> .content
@@ -89,9 +79,54 @@
 	.tabs-container
 	> .tab.active.tab-border-top
 	> .tab-border-top-container {
+	border-top-color: 0 !important;
 	background-size: 400% 400%;
 	background-image: var(--color-tabAnimationVSCode);
+	animation: gradient 4s ease alternate forwards;
 	height: 1px;
+	color: #ff66bb;
+}
+
+/* Background tab border top active */
+.monaco-workbench
+	.part.editor
+	> .content
+	.editor-group-container
+	> .title
+	.tabs-container
+	> .tab.tab-actions-right.sizing-fit.has-icon.tab-border-top.active {
+	background-color: rgb(32 33 55) !important;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0 50%;
+	}
+}
+
+.monaco-workbench
+	.part.statusbar
+	> .items-container
+	> .statusbar-item.remote-kind {
+	background: linear-gradient(33deg, #d93a61, #3a6ddf);
+}
+
+/* Tab terminal active color */
+.monaco-workbench
+	.part.panel
+	> .title
+	> .composite-bar-container
+	> .composite-bar
+	> .monaco-action-bar
+	.action-item.checked:not(:focus)
+	.active-item-indicator:before {
+	border-top-color: rgba(255, 121, 198, 0.5) !important;
 }
 
 @keyframes gradient {
@@ -108,8 +143,20 @@
 	}
 }
 
+.monaco-editor .cursors-layer .cursor {
+	width: 1px !important;
+	background-image: linear-gradient(224deg, #e98ba2, #fb3da6);
+}
+
 /* color text css */
-.monaco-workbench
+.mtk14 {
+	color: #ffcf95;
+}
+.mtk15 {
+	color: #e947b0;
+}
+
+/* .monaco-workbench
 	.part.basepanel
 	> .composite.title
 	> .panel-switcher-container
@@ -126,6 +173,7 @@
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-weight: 300;
 }
 .mtk5,
 .mtk26 {
@@ -140,6 +188,7 @@
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	-webkit-font-smoothing: auto;
+	font-weight: 300;
 }
 .mtk26 {
 	background-image: linear-gradient(
@@ -148,7 +197,6 @@
 		#20e3b2,
 		#a2de6a
 	);
-	font-style: italic;
 }
 .mtk23,
 .mtk16 {
@@ -208,89 +256,101 @@
 	-webkit-text-fill-color: transparent;
 }
 
-/* Setting JSON */
-{
-	"security.workspace.trust.untrustedFiles": "open",
-	"workbench.iconTheme": "material-icon-theme",
-	"editor.formatOnSave": true,
-	"editor.formatOnPaste": true,
-	"editor.fontWeight": "normal",
-	"editor.wordWrap": "on",
-	"editor.detectIndentation": false,
-	"editor.inlineSuggest.enabled": true,
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"emmet.triggerExpansionOnTab": true,
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-	"terminal.integrated.defaultProfile.windows": "Git Bash",
-	"editor.lineHeight": 30,
-	"editor.letterSpacing": 0.5,
-	"explorer.confirmDelete": false,
-	"html.format.wrapLineLength": 400,
-	"terminal.integrated.cursorWidth": 4,
-	"editor.minimap.maxColumn": 300,
-	"editor.scrollbar.verticalScrollbarSize": 12,
-	"prettier.useTabs": true,
-	"[css]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "<another formatter>"
-	},
-	"editor.tabSize": 2,
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"editor.fontFamily": "Cascadia Code, monospace, Consolas, 'Courier New'",
-	"editor.fontSize": 16,
-	"[scss]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"git.autofetch": true,
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"update.mode": "none",
-	"vscode_custom_css.imports": ["file:///C:/Users/PhatDev/css/color.css"],
-	"workbench.colorCustomizations": {
-		"terminal.foreground": "#dddad6",
-		"terminal.ansiBlack": "#1D2021",
-		"terminal.ansiBrightBlack": "#665C54",
-		"terminal.ansiBrightBlue": "#0D6678",
-		"terminal.ansiBrightCyan": "#8BA59B",
-		"terminal.ansiBrightGreen": "#237e02",
-		"terminal.ansiBrightMagenta": "#8F4673",
-		"terminal.ansiBrightRed": "#FB543F",
-		"terminal.ansiBrightWhite": "#FDF4C1",
-		"terminal.ansiBrightYellow": "#FAC03B",
-		"terminal.ansiBlue": "#00a1f9",
-		"terminal.ansiCyan": "#8BA59B",
-		"terminal.ansiGreen": "#95C085",
-		"terminal.ansiMagenta": "#8F4673",
-		"terminal.ansiRed": "#FB543F",
-		"terminal.ansiWhite": "#A89984",
-		"terminal.ansiYellow": "#FAC03B"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"editor.wordWrapColumn": 100,
-	"tailwindCSS.experimental.classRegex": ["[a-zA-Z]*class[a-zA-Z]*='([^']+)'"],
-	"chat.editor.wordWrap": "on",
-	"editor.fontLigatures": true,
-	"indentRainbow.colors": [
-		"rgba(38, 70, 83,0.15)",
-		"rgba(42, 157, 143,0.15)",
-		"rgba(233, 196, 106, 0.15)",
-		"rgba(244, 162, 97,0.15)",
-		"rgba(231, 111, 81,0.15)",
-		"rgba(231, 111, 81,0.1)",
-		"rgba(231, 111, 81,0.05)",
-		"rgba(231, 111, 81,0.025)"
-	],
-	"window.zoomLevel": 1,
-	"workbench.colorTheme": "Evondev Dracula Darker Contrast"
+.mtk1,
+.mtk13 {
+	color: transparent;
+	background: #fff;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+} */
+
+/* VS code color */
+/* .mtk1 {
+	color: transparent;
+	background-image: linear-gradient(to top, #f5f5f5, #8f8f8f);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
 }
+.mtk3 {
+	color: transparent;
+	background-image: linear-gradient(to top, #d4d4d4, #8f8f8f);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+}
+.mtk6 {
+	color: transparent;
+	background-image: linear-gradient(to top, #229bff, #68bafd);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+}
+.mtk7 {
+	color: transparent;
+	background-image: linear-gradient(to top, #b5cea8, #92d56f);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+}
+.mtk9 {
+	color: transparent;
+	background-image: linear-gradient(to top, #d7ba7d, #ffc56f);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+}
+.mtk10 {
+	color: transparent;
+	background-image: linear-gradient(to top, #40abe3, #b8e6ff);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+}
+.mtk12 {
+	color: transparent;
+	background-image: linear-gradient(to top, #e5a184, #df8560);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+}
+.mtk16 {
+	color: transparent;
+	background-image: linear-gradient(to top, #efefc0, #f5f556);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+}
+.mtk17 {
+	color: transparent;
+	background-image: linear-gradient(to top, #4ec9b0, #7be76e);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+}
+.mtk18 {
+	color: transparent;
+	background-image: linear-gradient(to top, #f97bc7, #e937b3);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+}
+.mtk19 {
+	color: transparent;
+	background-image: linear-gradient(to top, #8aa1e3, #d1c7f1);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+} */
