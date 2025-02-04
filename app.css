@@ -144,9 +144,26 @@
 	}
 }
 
+/* Cursor color */
+@keyframes blink-scale {
+	from {
+		transform: scaleY(1);
+		opacity: 1;
+	}
+	to {
+		transform: scaleY(-1);
+		opacity: 1;
+	}
+}
 .monaco-editor .cursors-layer .cursor {
 	width: 1px !important;
-	background-image: linear-gradient(224deg, #e98ba2, #fb3da6);
+	background: linear-gradient(224deg, #e98ba2, #fb3da6) !important;
+	transform-origin: center !important;
+	animation: blink-scale 1s ease-in-out infinite !important;
+}
+
+.monaco-editor .cursors-layer.cursor-smooth-caret-animation > .cursor {
+	transition: all 1.2s ease-in-out !important;
 }
 
 /* color text css */
@@ -469,9 +486,25 @@
 }
 
 /* Cursor color */
+@keyframes blink-scale {
+	from {
+		transform: scaleY(1);
+		opacity: 1;
+	}
+	to {
+		transform: scaleY(-1);
+		opacity: 1;
+	}
+}
 .monaco-editor .cursors-layer .cursor {
 	width: 1px !important;
-	background-image: linear-gradient(224deg, #e98ba2, #fb3da6);
+	background: linear-gradient(224deg, #e98ba2, #fb3da6) !important;
+	transform-origin: center !important;
+	animation: blink-scale 1s ease-in-out infinite !important;
+}
+
+.monaco-editor .cursors-layer.cursor-smooth-caret-animation > .cursor {
+	transition: all 1.2s ease-in-out !important;
 }
 
 /* Animation gradient */
