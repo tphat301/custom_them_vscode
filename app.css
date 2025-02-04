@@ -580,14 +580,11 @@
 .mtki {
 	font-style: normal;
 }
-/* .mtk1 {
-	color: transparent;
-	background-image: linear-gradient(#fff, #f3f3f3);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+.mtk13,
+.mtk1,
+.mtk24 {
+	font-weight: 300 !important;
 }
-::selection {
-	background: #ffffff1a !important;
-} */
-
+.monaco-mouse-cursor-text {
+	font-weight: 400 !important;
+}
