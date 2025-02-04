@@ -490,7 +490,7 @@
 /* text */
 .mtk15 {
 	color: transparent;
-	background-image: linear-gradient(var(--gradient-dir4), #fc806c, #ff1bd1);
+	background-image: linear-gradient(180deg, #e97663, #ff1bd1);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -580,7 +580,7 @@
 .mtki {
 	font-style: normal;
 }
-.mtk1 {
+/* .mtk1 {
 	color: transparent;
 	background-image: linear-gradient(#fff, #f3f3f3);
 	-webkit-background-clip: text;
@@ -589,5 +589,5 @@
 }
 ::selection {
 	background: #ffffff1a !important;
-}
+} */
 
