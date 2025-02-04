@@ -403,6 +403,17 @@
 	--color-tabAnimationVSCode3: linear-gradient(45deg, #df7adf, #e339d8);
 }
 
+/* Background color tab main */
+.monaco-workbench
+	.part.editor
+	> .content
+	.editor-group-container
+	> .title
+	.tabs-container
+	> .tab.active.tab-border-top {
+	background-color: rgba(189, 147, 249, 0.06) !important;
+}
+
 /* Sibal gradient */
 .monaco-workbench
 	.activitybar
