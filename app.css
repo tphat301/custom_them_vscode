@@ -624,11 +624,9 @@
 .mtki {
 	font-style: normal;
 }
+.mtk4,
 .mtk13,
 .mtk1,
 .mtk24 {
 	font-weight: 300 !important;
-}
-.monaco-mouse-cursor-text {
-	font-weight: 400 !important;
 }
