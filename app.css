@@ -612,8 +612,14 @@
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+.mtk8 {
+	color: transparent;
+	background-image: linear-gradient(360deg, #f1fa8c, #ebd78d);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 .mtk11,
-.mtk8,
 .mtk14 {
 	color: transparent;
 	background-image: linear-gradient(to right, #ffb88c, #eac394);
