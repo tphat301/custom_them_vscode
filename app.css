@@ -630,3 +630,6 @@
 .mtk24 {
 	font-weight: 300 !important;
 }
+::selection {
+	background-color: #ffffff1a !important;
+}
